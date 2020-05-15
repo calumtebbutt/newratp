@@ -103,7 +103,7 @@ const operators = ("\n\n**Meeting Place**\n\nRATP Dev London\nDaves Cafe\n\n**Lo
 
 const commands = ("\n\n**Commands**\n\n**!help** or **!commands** - to view all available commands\n**!rules** - to view the group rules\n**!routes** - to view a full list of routes\n**!operators** - to view a full list of operators\n**!meeting** - view notes on what was said in the weekly meeting\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const meeting = ("\n\n**Weekly Meeting Notes**\n\nThe new sim will be London & East V3 (released date has not been confirmed)\nThe current routes on the new sim have been announced (use !routes to view them)\nOur new Cafe Partner **Daves Cafe** opened their doors on our meeting place\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebration\nMore Previews of London & East V3\nRATP Game Night may be coming up soon\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 
 
