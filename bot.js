@@ -3,8 +3,6 @@ const client = new Discord.Client();
 
 const PREFIX = '!';
 
-client.login(token)
-
 client.on('ready', () =>{
     console.log('This bot is online.');
     client.user.setActivity(`RATP Discord`, { type: `WATCHING`}).catch(console.error);
