@@ -88,7 +88,7 @@ const routes = ("\n\n**London & East V3**\n**Routes**\n\n**58** Walthamstow Cent
 
 const operators = ("\n\n**Meeting Place**\n\nRATP Dev London\nDaves Cafe\n\n**London & East V3**\n\nRATP Dev London\nDaves Cafe\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const ratp = ("\n\n**Commands**\n\n**!RATP** - to view all available commands\n**!rules** - to view the group rules\n**!routes** - to view a full list of routes\n**!operators** - to view a full list of operators\n**!meeting** - view notes on what was said in the weekly meeting\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const ratp = ("\n\n**RATP Helper :)**\n\n**!ratp** - to view all available commands\n**!rules** - to view the group rules\n**!routes** - to view a full list of routes\n**!operators** - to view a full list of operators\n**!meeting** - view notes on what was said in the weekly meeting\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebration\nMore Previews of London & East V3\nRATP Game Night may be coming up soon\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
