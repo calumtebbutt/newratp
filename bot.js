@@ -115,5 +115,16 @@ const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebrati
 const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be added when reece sends them.\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 
+// ping
+
+var ping = Date.now() - message.createdTimestamp + " ms";
+  if (message.content.startsWith(PREFIX + "ping")) {
+    
+    var ping = Date.now() - message.createdTimestamp + " ms";
+    message.channel.sendMessage("Your ping is `" + `${Date.now() - message.createdTimestamp}` + " ms`");
+
+  }
+
+
 
 client.login(process.env.BOT_TOKEN);
