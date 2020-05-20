@@ -128,7 +128,7 @@ const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebrati
 
 const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be added when reece sends them.\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const faq = ("\n\n**Frequently Asked Questions**")
+const faq = ("\n\n**Frequently Asked Questions**\nTo be added...\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 
 client.login(process.env.BOT_TOKEN);
