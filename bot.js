@@ -95,6 +95,20 @@ client.on('message', message=>{
 })
 
 
+// FAQ command
+
+client.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+    switch(args[0]) {
+        case 'faq':
+            message.author.send(faq);
+        break;
+    }
+})
+
+
 
 
 
@@ -114,6 +128,7 @@ const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebrati
 
 const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be added when reece sends them.\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
+const faq = ("\n\n**Frequently Asked Questions**")
 
 
 client.login(process.env.BOT_TOKEN);
