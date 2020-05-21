@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const { config } = require("dotenv");
-
 const PREFIX = '!';
 
 client.on('ready', () =>{
@@ -13,17 +11,11 @@ client.on('ready', () =>{
 
 // ping
 
-    const args = message.content.slice(prefix.length).trim().split(/ +/g);
-    const cmd = args.shift().toLowerCase();
-
-    if (cmd === "ping") {
-        // Send a message
-        const msg = await message.channel.send(`🏓 Pinging....`);
-
-        // Edit the message
-        msg.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestap - message.createdTimestap)}ms\nAPI Latency is ${Math.round(client.ping)}ms`);
+client.on('message', message => {
+    if(message.content.startsWith("!ping")) {
+            message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
     }
-
+}
 
 
 
