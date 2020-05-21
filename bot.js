@@ -9,12 +9,11 @@ client.on('ready', () =>{
 })
 
 
-// ping
+//delete dot channel messages
 
-client.on('message', message => {
-    if(message.content.startsWith("!ping")) {
-            message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
-    }
+if (message.content.startsWith(`.`)) {
+    await message.channel.send('LOL').then(r => r.delete({ timeout: 5000 }))
+    console.log("dot");
 }
 
 
