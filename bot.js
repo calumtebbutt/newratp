@@ -149,7 +149,9 @@ client.on('message', message=>{
 
   switch(args[0]) {
       case 'ping':
-          message.reply(":ping_pong: Pong! took **273ms**")
+        var facts = [":ping_pong: Pong! took **229ms**", ":ping_pong: Pong! took **242ms**", ":ping_pong: Pong! took **257ms**", ":ping_pong: Pong! took **261ms**", ":ping_pong: Pong! took **273ms**"];
+        var fact = Math.floor(Math.random() * facts.length);
+        message.reply(facts[fact]);
       break;
   }
 })
