@@ -111,6 +111,21 @@ client.on('message', message=>{
 
 
 
+// Credits command
+
+client.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+    switch(args[0]) {
+        case 'credits':
+            message.author.send(credits);
+        break;
+    }
+})
+
+
+
 
 
 
@@ -121,15 +136,17 @@ const rules = ("\n\n**Rules**\n**1.** No Racism\n**2.** No Spamming\n**3.** No b
 
 const routes = ("\n\n**London & East V3**\n**Routes**\n\n**58** Walthamstow Central to Wanstead Park \n**69** Walthamstow Central to Stratford\n**97** Chingford to Stratford City [FULL ROUTE]\n**158** Chingford Mount to Stratford [FULL ROUTE]\n**212** Chingford to St. James Street [FULL ROUTE]\n**215** Lea Valley Campsite to Walthamstow Central [FULL ROUTE]\n**257** Walthamstow Central to Stratford [FULL ROUTE]\n**357** Chingford Hatch to Whipps Cross (Hospital - Sundays only) [FULL ROUTE]\n**339** Leytonstone to Stratford City\n**W11** Chingford Hall Estate to Walthamstow Central [FULL ROUTE]\n**W15** Higham Hill, Cogan Avenue to Lea Interchange Bus Garage\n**W16** Chingford Mount to Leytonstone Station [FULL ROUTE]\n**W19** Walthamstow, Argall Avenue/St. James Street to Leytonstone Plaza\n**N26** Chingford Station/Walthamstow Central to Lea Interchange Bus Garage\n\n**Extensions possible after the release of the first part of the sim**\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const operators = ("\n\n**London & East V3**\n\nRATP Dev London\nStagecoach\nFirst Travel\nSunRise Coffee\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const operators = ("\n\n**London & East V3**\n\nRATP Dev London\nStagecoach\nFirst Travel\nSunRise Coffee\nGreggs\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 const ratp = ("\n\n\n**RATP Helper**\n\n**!ratp** - to view all available commands\n**!rules** - to view the group rules\n**!routes** - to view a full list of routes\n**!operators** - to view a full list of operators\n**!meeting** - to view notes on what was said in the weekly meeting\n**!buses** - to view the full RATP Fleet\n**!faq** - to view frequently asked questions\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebration\nMore Previews of London & East V3\nRATP Game Night may be coming up soon\n\n**Next Meeting:** 31st May 2020\n**Time:** TBC\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be added when reece sends them.\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be announced soon...\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 const faq = ("\n\n**Frequently Asked Questions**\n\n**Can I be a HR?**\nCurrently, HR applications are not open, when they do open, they will be advertised in the #applications channel.\n\n------------------------------------------------------------------------------------------------------------\n\n")
+
+const credits =("\n\n**Development Credits**\n\n**CalumT01**\n**eesa222**\n**senyoALT44**\n**BrickBusEllis**\n**MrTomasBoy**\n**Mike_7668**\n**iiCentreBus**\n**x3fklazomaniac**\n**iiReece98**\n**GreekAviator_RBX**\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 
 client.login(process.env.BOT_TOKEN);
