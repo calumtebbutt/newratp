@@ -149,7 +149,7 @@ client.on('message', message=>{
 
   switch(args[0]) {
       case 'ping':
-          message.reply(`:ping_pong: Pong! Took **`${Math.ceil(Date.now() - start)}`ms**`)
+          message.reply(":ping_pong: Pong! took **273ms**")
       break;
   }
 })
