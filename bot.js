@@ -127,6 +127,22 @@ client.on('message', message=>{
 
 
 
+// ping
+
+client.on('message', message=>{
+
+  let args = message.content.substring(PREFIX.length).split(" ");
+
+  switch(args[0]) {
+      case 'ping':
+          message.reply(pong)
+      break;
+  }
+})
+
+
+
+
 
 
 
@@ -138,7 +154,7 @@ const routes = ("\n\n**London & East V3**\n**Routes**\n\n**58** Walthamstow Cent
 
 const operators = ("\n\n**London & East V3**\n\nRATP Dev London\nFirst Travel\nSullivan Buses\nSunRise Coffee\nGreggs\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const ratp = ("\n\n\n**RATP Helper**\n\n**!ratp** - to view all available commands\n**!rules** - to view the group rules\n**!routes** - to view a full list of routes\n**!operators** - to view a full list of operators\n**!meeting** - to view notes on what was said in the weekly meeting\n**!buses** - to view the full RATP Fleet\n**!faq** - to view frequently asked questions\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const ratp = ("\n\n\n**RATP Helper**\n\n**!ratp** - to view all available commands\n**!rules** - to view the group rules\n**!routes** - to view a full list of routes\n**!operators** - to view a full list of operators\n**!meeting** - to view notes on what was said in the weekly meeting\n**!buses** - to view the full RATP Fleet\n**!faq** - to view frequently asked questions\n**!credits** - to view a full list of game credits\n**!staff** - to view a full list of the HRs, Seniors & Execs\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebration\nMore Previews of London & East V3\nRATP Game Night may be coming up soon\n\n**Next Meeting:** 31st May 2020\n**Time:** TBC\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
@@ -148,5 +164,8 @@ const faq = ("\n\n**Frequently Asked Questions**\n\n**Can I be a HR?**\nCurrentl
 
 const credits =("\n\n**Development Credits**\n\n**CalumT01**\n**eesa222**\n**senyoALT44**\n**BrickBusEllis**\n**MrTomasboy**\n**Mike_7668**\n**iiCentrebus**\n**x3fklazomaniac**\n**iiReece98** - not rlly he just sits there\n**GreekAviator_RBX**\n**railwork**\n**redline_1999**\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
+const pong = (`:ping_pong: Pong! Took **${Math.ceil(Date.now() - start)}ms**`)
+
+const staff = ("\n\n**RATP Staff**\n\n**HRs**\nLukasRichwood\nreecerod\nBrickBusEllis\nAlexDev_exe\nZainabdriver\nmxtiple\nBrettYork\namazingguy377\nDD_Sim\nRebelkopGamer206\nPhotoBlockTrollz\niiDight3r\nFletchyboy100\njojojosh3210\nmax8gaming\nBritishAviator_RBX\nCaidanParker\nTowerGateway\nOptical365\nthemister18\nKacperEpic\nJ_oshJ\nredline_1999\nConnorClever\nx3fklazomaniac\nMike_7668\n\n**Seniors**\nsenyo44ALT2\n\n**Execs**\nCalumT01 *- Executive Assistant*\neesa222 *- Executive Assistant*\nMrTomasboy *- Chief Executive Officer*\nvelentahst *- Deputy Chairman*\niiReece98 *- Chairman*")
 
 client.login(process.env.BOT_TOKEN);
