@@ -146,7 +146,7 @@ const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be announced soon...\n\n----
 
 const faq = ("\n\n**Frequently Asked Questions**\n\n**Can I be a HR?**\nCurrently, HR applications are not open, when they do open, they will be advertised in the #applications channel.\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const credits =("\n\n**Development Credits**\n\n**CalumT01**\n**eesa222**\n**senyoALT44**\n**BrickBusEllis**\n**MrTomasboy**\n**Mike_7668**\n**iiCentreBus**\n**x3fklazomaniac**\n**iiReece98**\n**GreekAviator_RBX**\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const credits =("\n\n**Development Credits**\n\n**CalumT01**\n**eesa222**\n**senyoALT44**\n**BrickBusEllis**\n**MrTomasboy**\n**Mike_7668**\n**iiCentreBus**\n**x3fklazomaniac**\n**iiReece98** - not rlly he just sits there\n**GreekAviator_RBX**\n**railwork**\n**redline_1999**\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 
 client.login(process.env.BOT_TOKEN);
