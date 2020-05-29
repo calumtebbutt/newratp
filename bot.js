@@ -149,7 +149,7 @@ client.on('message', message=>{
 
   switch(args[0]) {
       case 'ping':
-        var facts = [":ping_pong: Pong! took **229ms**", ":ping_pong: Pong! took **242ms**", ":ping_pong: Pong! took **257ms**", ":ping_pong: Pong! took **261ms**", ":ping_pong: Pong! took **273ms**"];
+        var facts = [":ping_pong: Pong! took **241ms**", ":ping_pong: Pong! took **242ms**", ":ping_pong: Pong! took **243ms**", ":ping_pong: Pong! took **244ms**", ":ping_pong: Pong! took **245ms**"];
         var fact = Math.floor(Math.random() * facts.length);
         message.reply(facts[fact]);
       break;
@@ -176,7 +176,7 @@ const meeting = ("\n\n**Weekly Meeting Notes**\n\niiReece98's Birthday Celebrati
 
 const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be announced soon...\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const faq = ("\n\n**Frequently Asked Questions**\n\n**Can I be a HR?**\nCurrently, HR applications are not open, when they do open, they will be advertised in the #applications channel.\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const faq = ("\n\n**Frequently Asked Questions**\n\n**Can I be a HR?**\nCurrently, HR applications are not open, when they do open, they will be advertised in the #applications channel.\n\n**When is the next meeting?**\nThe nexting meeting is: TBC\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 const credits =("\n\n**Development Credits**\n\n**CalumT01**\n**eesa222**\n**senyoALT44**\n**BrickBusEllis**\n**MrTomasboy**\n**Mike_7668**\n**iiCentrebus**\n**x3fklazomaniac**\n**iiReece98** - not rlly he just sits there\n**GreekAviator_RBX**\n**railwork**\n**redline_1999**\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
