@@ -149,7 +149,7 @@ client.on('message', message=>{
 
   switch(args[0]) {
       case 'ping':
-        var facts = [":ping_pong: Pong! took **154ms**", ":ping_pong: Pong! took **156ms**", ":ping_pong: Pong! took **158ms**", ":ping_pong: Pong! took **159ms**", ":ping_pong: Pong! took **261ms**"];
+        var facts = [":ping_pong: Pong! took **121ms**", ":ping_pong: Pong! took **125ms**", ":ping_pong: Pong! took **124ms**", ":ping_pong: Pong! took **129ms**", ":ping_pong: Pong! took **118ms**"];
         var fact = Math.floor(Math.random() * facts.length);
         message.reply(facts[fact]);
       break;
@@ -180,7 +180,7 @@ const faq = ("\n\n**Frequently Asked Questions**\n\n**Can I be a HR?**\nCurrentl
 
 const credits =("\n\n**Development Credits**\n\n**CalumT01**\n**eesa222**\n**senyoALT44**\n**BrickBusEllis**\n**MrTomasboy**\n**Mike_7668**\n**iiCentrebus**\n**x3fklazomaniac**\n**iiReece98** - not rlly he just sits there\n**GreekAviator_RBX**\n**railwork**\n**redline_1999**\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const staff = ("\n\n**RATP Staff**\n\n**HRs**\nLukasRichwood\nreecerod\nBrickBusEllis\nAlexDev_exe\nZainabdriver\nmxtiple\nBrettYork\namazingguy377\nDD_Sim\nRebelkopGamer206\nPhotoBlockTrollz\niiDight3r\nFletchyboy100\njojojosh3210\nmax8gaming\nBritishAviator_RBX\nCaidanParker\nTowerGateway\nOptical365\nthemister18\nKacperEpic\nJ_oshJ\nredline_1999\nConnorClever\nx3fklazomaniac\nMike_7668\n\n**Seniors**\nsenyo44ALT2\n\n**Execs**\nCalumT01 *- Executive Assistant*\neesa222 *- Executive Assistant*\nMrTomasboy *- Chief Executive Officer*\nvelentahst *- Deputy Chairman*\niiReece98 *- Chairman*")
+const staff = ("\n\n**RATP Staff**\n\n**HRs**\nLukasRichwood\nreecerod\nBrickBusEllis\nAlexDev_exe\nZainabdriver\nmxtiple\nBrettYork\namazingguy377\nDD_Sim\nRebelkopGamer206\nPhotoBlockTrollz\niiDight3r\nFletchyboy100\njojojosh3210\nmax8gaming\nBritishAviator_RBX\nCaidanParker\nTowerGateway\nOptical365\nthemister18\nKacperEpic\nJ_oshJ\nredline_1999\nConnorClever\nx3fklazomaniac\nMike_7668\n\n**Seniors**\nsenyo44ALT2\n\n**Execs**\nCalumT01 *- Executive Assistant*\neesa222 *- Executive Assistant*\nMrTomasboy *- Chief Executive Officer*\niiReece98 *- Chairman*")
 
 
 client.login(process.env.BOT_TOKEN);
