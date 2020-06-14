@@ -172,7 +172,7 @@ const operators = ("\n\n**London & East V3**\n\n**RATP Dev London**\nDiscord: ht
 
 const ratphelp = ("\n\n\n**RATP Helper**\n\n**!ratphelp** - to view all available commands\n**!rules** - to view the group rules\n**!routes** - to view a full list of routes\n**!operators** - to view a full list of operators\n**!meeting** - to view notes on what was said in the weekly meeting\n**!buses** - to view the full RATP Fleet\n**!faq** - to view frequently asked questions\n**!credits** - to view a full list of game credits\n**!staff** - to view a full list of the HRs, Seniors & Execs\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
-const meeting = ("\n\n**Weekly Meeting Notes**\n\nTo be uploaded soon...\n\n**Next Meeting:** 31st May 2020\n**Time:** TBC\n\n------------------------------------------------------------------------------------------------------------\n\n")
+const meeting = ("\n\n**Weekly Meeting Notes**\n\nTo be uploaded soon...\n\n**Next Meeting:** TBC\n**Time:** TBC\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
 const buses = ("\n\n**RATP Dev London Fleet**\n\nTo be announced soon...\n\n------------------------------------------------------------------------------------------------------------\n\n")
 
