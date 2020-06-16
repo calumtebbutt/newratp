@@ -183,4 +183,51 @@ const credits =("\n\n**Development Credits**\n\n**CalumT01** - Lea Interchange, 
 const staff = ("\n\n**RATP Staff**\n\n**HRs**\nLukasRichwood\nreecerod\nBrickBusEllis\nAlexDev_exe\nZainabdriver\nmxtiple\nBrettYork\namazingguy377\nDD_Sim\nRebelkopGamer206\nPhotoBlockTrollz\niiDight3r\nFletchyboy100\njojojosh3210\nmax8gaming\nBritishAviator_RBX\nCaidanParker\nTowerGateway\nOptical365\nthemister18\nKacperEpic\nJ_oshJ\nredline_1999\nConnorClever\nx3fklazomaniac\nMike_7668\n\n**Seniors**\nsenyo44ALT2\n\n**Execs**\nCalumT01 *- Executive Assistant*\neesa222 *- Executive Assistant*\nMrTomasboy *- Chief Executive Officer*\niiReece98 *- Chairman*")
 
 
+// UserInfo Command
+
+const bot = new Discord.Client({disableEveryone: true});
+
+client.on("message", async message => {
+	
+	
+	if(message.author.bot) return;
+	if(message.channel.type === "dm") return;
+	
+	let messageArray = message.content.split(" ");
+	let command = messageArray[0];
+	let args = messageArray.slice(1);
+	let com = command.toLowerCase();
+    var sender = message.author;
+
+if(com === `${prefix}ui`) {
+    
+    let rMember = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]))
+	let ment = message.mentions.users.first();
+		if(!ment) {
+			message.channel.send('Please mention a user!')
+		}
+	
+		const embed = new Discord.MessageEmbed()
+		.addField("Discord Username", ment.tag)
+		.addField("UserID", ment.id)
+		.addField("Current Status", ment.presence.status)
+        .addField("Account Created", ment.createdAt)
+        .addField("RATP Server Join Date", rMember.joinedAt)
+        .setThumbnail(ment.avatarURL)
+		message.channel.send(embed)
+	
+		return console.log(`> userinfo command used by ${message.author.username}`);
+	}
+})
+
+
+
+
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
