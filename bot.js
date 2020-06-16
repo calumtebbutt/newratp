@@ -199,9 +199,9 @@ client.on("message", async message => {
 	let com = command.toLowerCase();
     var sender = message.author;
 
-if(com === `${prefix}ui`) {
+if(com === `${PREFIX}ui`) {
     
-    let rMember = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]))
+        let rMember = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]))
 	let ment = message.mentions.users.first();
 		if(!ment) {
 			message.channel.send('Please mention a user!')
@@ -211,9 +211,9 @@ if(com === `${prefix}ui`) {
 		.addField("Discord Username", ment.tag)
 		.addField("UserID", ment.id)
 		.addField("Current Status", ment.presence.status)
-        .addField("Account Created", ment.createdAt)
-        .addField("RATP Server Join Date", rMember.joinedAt)
-        .setThumbnail(ment.avatarURL)
+                .addField("Account Created", ment.createdAt)
+                .addField("RATP Server Join Date", rMember.joinedAt)
+                .setThumbnail(ment.avatarURL)
 		message.channel.send(embed)
 	
 		return console.log(`> userinfo command used by ${message.author.username}`);
