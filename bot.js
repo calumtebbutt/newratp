@@ -145,17 +145,25 @@ client.on('message', message=>{
 
 client.on('message', message=>{
 
-  let args = message.content.substring(PREFIX.length).split(" ");
+    let args = message.content.substring(PREFIX.length).split(" ");
+  
+    switch(args[0]) {
+        case 'testping':
 
-  switch(args[0]) {
-      case 'ping':
         var facts = [":ping_pong: Pong! took **121ms**", ":ping_pong: Pong! took **125ms**", ":ping_pong: Pong! took **124ms**", ":ping_pong: Pong! took **129ms**", ":ping_pong: Pong! took **118ms**"];
-        var fact = Math.floor(Math.random() * facts.length);
-        message.reply(facts[fact]);
-      break;
-  }
-})
+        var fact = Math.floor(Math.random() * facts.length);  
 
+          const pingembed = new Discord.MessageEmbed()
+          .setColor('#0099ff')
+          .setTitle('Ping :ping_pong:')
+          .addField('Ping', (facts[fact]));
+
+          message.channel.send(pingembed)
+
+        break;
+
+    }
+  })
 
 
 
